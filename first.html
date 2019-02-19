@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="mystyle.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <h2>First Page</h2>
+		<p>
+			This is the first page.
+        </p>
+    <h2>Choose</h2>
+    <form action="" id="sourceForm">
+        <label for="language">Language</label> 
+        <select name="language" id="language" onchange="showLanguage()">
+            <option value="English">English</option>
+            <option value="Finnish">Finnish</option>
+            <option value="Swedish">Swedish</option>
+        </select> <br>
+        <label for="phone">Phone</label> <br> 
+        <input type="radio" name="phone" onclick="showPhone('Nokia')"> Nokia <br>
+        <input type="radio" name="phone" onclick="showPhone('Huawei')"> Huawei <br>
+        <input type="radio" name="phone" onclick="showPhone('Samsung')"> Samsung 
+    </form>
+    <form action="" id="targetForm">
+        <label for="">Language</label>
+        <input type="text" id="selectedLang"> <br>
+        <label for="">Phone</label>
+        <input type="text" id="selectedPhone">
+    </form>
+</body>
+</html>
